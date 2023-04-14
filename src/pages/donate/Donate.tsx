@@ -1,34 +1,34 @@
-import { FunctionComponent } from 'react';
-import { Card, Form, FormConfig } from '../../components';
-import donateValidationSchema from './donateValidationSchema';
+import { FunctionComponent } from "react";
+import { Card, Form, FormConfig } from "../../components";
+import donateValidationSchema from "./donateValidationSchema";
 
 const defaultValues = {
-  amount: '',
-  email: '',
-  name: '',
+  amount: "",
+  email: "",
+  name: "",
 };
 
 const formConfig: FormConfig[] = [
   {
-    label: 'Name',
-    name: 'name',
-    type: 'text',
+    label: "Name",
+    name: "name",
+    type: "text",
   },
   {
-    label: 'Email',
-    name: 'email',
-    type: 'text',
+    label: "Email",
+    name: "email",
+    type: "text",
   },
   {
-    label: 'Amount (Naira)',
-    name: 'amount',
-    type: 'number',
+    label: "Amount (Naira)",
+    name: "amount",
+    type: "number",
   },
 ];
 
 const Donate: FunctionComponent = () => {
   const handleSubmit = (values: Record<string, string>) => {
-    console.log('Submitting...', values);
+    console.log("Submitting...", values);
   };
 
   return (

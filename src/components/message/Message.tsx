@@ -1,7 +1,7 @@
-import './Message.css';
+import "./Message.css";
 
-import { FunctionComponent } from 'react';
-import { Button, Card } from '..';
+import { FunctionComponent } from "react";
+import { Button, Card } from "..";
 
 interface MessageArgs {
   description: string;
@@ -14,7 +14,7 @@ const Message: FunctionComponent<MessageArgs> = ({ description, title }) => {
         <h2>{title}</h2>
         <p>{description}</p>
         <div className="btn-container">
-          <Button text="Go home" to={'/'} type="link" />
+          <Button text="Go home" to={"/"} type="link" />
         </div>
       </>
     </Card>
