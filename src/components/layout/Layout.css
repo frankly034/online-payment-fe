@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.button-container {
+  margin-top: 1.5rem;
+}
+
+h1 {
+  color: #ccc;
+}
+
+@media (prefers-color-scheme: light) {
+  h1 {
+    color: #666;
+  }
+}

@@ -1,0 +1,12 @@
+.Message {
+  width: 600px;
+}
+
+.Message .btn-container {
+  margin-top: 24px;
+}
+
+.Message p {
+  font-size: 24px;
+  margin: 16px 0;
+}

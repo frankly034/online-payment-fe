@@ -1,0 +1,45 @@
+.InputField {
+  margin-bottom: 0.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.InputField input {
+  padding: 0.6em 0.6em;
+  font-size: 1em;
+  font-weight: 500;
+  transition: border-color 0.25s;
+}
+
+.InputField label {
+  font-weight: 500;
+  color: #ccc;
+}
+
+.InputField .error {
+  color: #d44;
+  margin: 0;
+}
+
+.InputField input:focus-visible,
+.InputField input:focus {
+  border-radius: 3px;
+  outline: 4px auto -webkit-focus-ring-color;
+  outline-color: #ddd;
+}
+
+@media (prefers-color-scheme: light) {
+  .InputField label {
+    color: #666;
+  }
+
+  .InputField input:focus-visible,
+  .InputField input:focus {
+    outline-color: #333;
+  }
+
+  .InputField input:hover {
+    outline: 4px auto -webkit-focus-ring-color;
+    outline-color: #999;
+  }
+}
