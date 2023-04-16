@@ -1,5 +1,5 @@
-import './InputField.css';
-import { FunctionComponent } from 'react';
+import "./InputField.css";
+import { FunctionComponent } from "react";
 
 interface InputFieldProps {
   error?: string;
@@ -19,13 +19,20 @@ const InputField: FunctionComponent<InputFieldProps> = ({
   onBlur,
   onChange,
   touched,
-  type = 'text',
+  type = "text",
   value,
 }) => {
   return (
     <div className="InputField">
       <label htmlFor={name}>{label}</label>
-      <input id={name} name={name} onBlur={onBlur} onChange={onChange} type={type} value={value} />
+      <input
+        id={name}
+        name={name}
+        onBlur={onBlur}
+        onChange={onChange}
+        type={type}
+        value={value}
+      />
       {error && touched && <p className="error">{error}</p>}
     </div>
   );

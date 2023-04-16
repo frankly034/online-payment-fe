@@ -1,7 +1,7 @@
-import { FunctionComponent } from 'react';
-import { Button, InputField } from '..';
-import { useFormik } from 'formik';
-import { ObjectSchema } from 'yup';
+import { FunctionComponent } from "react";
+import { Button, InputField } from "..";
+import { useFormik } from "formik";
+import { ObjectSchema } from "yup";
 
 export interface FormConfig {
   name: string;
@@ -54,7 +54,7 @@ const Form: FunctionComponent<FormProps> = ({
         <Button
           isLoading={isLoading}
           onClick={formik.submitForm}
-          text={buttonText || 'Submit'}
+          text={buttonText || "Submit"}
           type="button"
         />
       </div>

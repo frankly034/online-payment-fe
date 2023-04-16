@@ -1,6 +1,6 @@
 # Online Payment FE (Donations App)
 
-This is an React app, bootstrapped using Vite. It is part of a tutorial series ([See playlist](https://www.youtube.com/playlist?list=PLseH49SWn6vbVS_QQLkWdRrZFeLauLpzH)) to illustrate how to integrate payment using an application's payment api.
+This is a React app, bootstrapped using Vite. It is part of a tutorial series ([See playlist](https://www.youtube.com/playlist?list=PLseH49SWn6vbkThN4BfSaI7KX-cLKUlzf)) to illustrate how to integrate payment using an application's payment api.
 
 ## Table of Contents
 
@@ -29,7 +29,7 @@ This is an React app, bootstrapped using Vite. It is part of a tutorial series (
 - The API employed for donation was gotten from a previous project: [Online Payment API](https://github.com/frankly034/online-payment-api). Checkout the youtube playlist of a walkthrough on how the API was built [here](https://www.youtube.com/playlist?list=PLseH49SWn6vbVS_QQLkWdRrZFeLauLpzH).
 - API documentation can be found [here](https://documenter.getpostman.com/view/17383417/2s93RXtqr5)
 - This app demonstrates the use of React concepts like:
-  - Compnents structuring
+  - Components structuring
   - Routing and templating with [react route dom v6](https://www.npmjs.com/package/react-router-dom)
   - API integration with [axios](https://www.npmjs.com/package/axios)
   - Data fetching management with [@tanstack/react-query](https://www.npmjs.com/package/@tanstack/react-query)
