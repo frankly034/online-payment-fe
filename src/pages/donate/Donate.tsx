@@ -1,6 +1,8 @@
 import { FunctionComponent } from "react";
 import { Card, Form, FormConfig } from "../../components";
 import donateValidationSchema from "./donateValidationSchema";
+import { useInitializePayment } from "../../hooks";
+import { InitializePaymentArgs } from "../../api";
 
 const defaultValues = {
   amount: "",
@@ -27,8 +29,16 @@ const formConfig: FormConfig[] = [
 ];
 
 const Donate: FunctionComponent = () => {
-  const handleSubmit = (values: Record<string, string>) => {
-    console.log("Submitting...", values);
+  const {
+    isLoading,
+    isSuccess,
+    mutate: initializePayment,
+  } = useInitializePayment({
+    onSuccess: (data) => window.location.assign(data.authorizationUrl),
+    onError: () => window.alert("An error occured."),
+  });
+  const handleSubmit = (paymentDetails: InitializePaymentArgs) => {
+    initializePayment(paymentDetails);
   };
 
   return (
@@ -37,7 +47,7 @@ const Donate: FunctionComponent = () => {
         buttonText="Donate"
         config={formConfig}
         defaultValues={defaultValues}
-        isLoading={false}
+        isLoading={isLoading || isSuccess}
         onSubmit={handleSubmit}
         validationSchema={donateValidationSchema}
       />
