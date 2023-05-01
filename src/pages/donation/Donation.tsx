@@ -23,6 +23,10 @@ const Donation = () => {
       return `Your donation was not successful ❤️‍🩹. ${error.response?.data?.message}.`;
     }
 
+    if (!reference) {
+      return `Your donation was not successful ❤️‍🩹. Missing reference.`;
+    }
+
     return "Processing...";
   }, [data, error, isLoading]);
 

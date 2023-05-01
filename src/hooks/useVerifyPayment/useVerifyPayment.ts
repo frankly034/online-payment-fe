@@ -6,7 +6,8 @@ import { AxiosError } from "axios";
 const useVerifyPayment = (reference: string) =>
   useQuery<VerifiedPayment, AxiosError<ApiError>, VerifiedPayment>(
     ["verifyPayment", reference],
-    () => paystackApi.verifyPayment(reference)
+    () => paystackApi.verifyPayment(reference),
+    { enabled: !!reference }
   );
 
 export default useVerifyPayment;
