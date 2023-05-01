@@ -1,6 +1,9 @@
 # Online Payment FE (Donations App)
 
-This is a React app, bootstrapped using Vite. It is part of a tutorial series ([See playlist](https://www.youtube.com/playlist?list=PLseH49SWn6vbkThN4BfSaI7KX-cLKUlzf)) to illustrate how to integrate payment using an application's payment api.
+This is a React app, bootstrapped using Vite. It is part of a tutorial series ([See playlist](https://www.youtube.com/playlist?list=PLseH49SWn6vbkThN4BfSaI7KX-cLKUlzf)) to illustrate how to integrate payment using an application's payment api. The api is hosted with [Railway App](https://railway.app) at this url => https://online-payment-api-production.up.railway.app/
+
+`To use the already hosted api, update the environment variable:
+VITE_BACKEND_URL=https://online-payment-api-production.up.railway.app/api`
 
 ## Table of Contents
 
